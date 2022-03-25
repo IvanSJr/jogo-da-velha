@@ -10,6 +10,9 @@ import { JogoDaVelhaComponent } from './jogo-da-velha.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    JogoDaVelhaComponent
   ]
 })
 export class JogoDaVelhaModule { }
