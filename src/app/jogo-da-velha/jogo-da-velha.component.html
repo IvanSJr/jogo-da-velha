@@ -13,15 +13,61 @@
   <!-- tabuleiro -->
   <div *ngIf="showTabuleiro">
     <ul>
-      <li class="kz-border-bottom kz-border-right"></li>
-      <li class="kz-border-bottom kz-border-right"></li>
-      <li class="kz-border-bottom"></li>
-      <li class="kz-border-bottom kz-border-right"></li>
-      <li class="kz-border-bottom kz-border-right"></li>
-      <li class="kz-border-bottom"></li>
-      <li class="kz-border-right"></li>
-      <li class="kz-border-right"></li>
-      <li></li>
+
+      <li class="kz-border-bottom kz-border-right"
+      [class.kz-img-x]="exibirX(0, 0)"
+      [class.kz-img-o]="exibirO(0,0)"
+      [class.kz-cor-vitoria]="exibirVitoria(0, 0)"
+      (click)="jogar(0, 0)"
+      ></li>
+      <li class="kz-border-bottom kz-border-right"
+      [class.kz-img-x]="exibirX(0, 1)"
+      [class.kz-img-o]="exibirO(0,1)"
+      [class.kz-cor-vitoria]="exibirVitoria(0, 1)"
+      (click)="jogar(0, 1)"
+      ></li>
+      <li class="kz-border-bottom"
+      [class.kz-img-x]="exibirX(0, 2)"
+      [class.kz-img-o]="exibirO(0,2)"
+      [class.kz-cor-vitoria]="exibirVitoria(0, 2)"
+      (click)="jogar(0, 2)"
+      ></li>
+      <li class="kz-border-bottom kz-border-right"
+      [class.kz-img-x]="exibirX(1, 0)"
+      [class.kz-img-o]="exibirO(1,0)"
+      [class.kz-cor-vitoria]="exibirVitoria(1, 0)"
+      (click)="jogar(1, 0)"
+      ></li>
+      <li class="kz-border-bottom kz-border-right"
+      [class.kz-img-x]="exibirX(1, 1)"
+      [class.kz-img-o]="exibirO(1,1)"
+      [class.kz-cor-vitoria]="exibirVitoria(1, 1)"
+      (click)="jogar(1, 1)"
+      ></li>
+      <li class="kz-border-bottom"
+      [class.kz-img-x]="exibirX(1, 2)"
+      [class.kz-img-o]="exibirO(1,2)"
+      [class.kz-cor-vitoria]="exibirVitoria(1, 2)"
+      (click)="jogar(1, 2)"
+      ></li>
+      <li class="kz-border-right"
+      [class.kz-img-x]="exibirX(2, 0)"
+      [class.kz-img-o]="exibirO(2,0)"
+      [class.kz-cor-vitoria]="exibirVitoria(2, 0)"
+      (click)="jogar(2, 0)"
+      ></li>
+      <li class="kz-border-right"
+      [class.kz-img-x]="exibirX(2, 1)"
+      [class.kz-img-o]="exibirO(2,1)"
+      [class.kz-cor-vitoria]="exibirVitoria(2, 1)"
+      (click)="jogar(2, 1)"
+      ></li>
+      <li
+      [class.kz-img-x]="exibirX(2, 2)"
+      [class.kz-img-o]="exibirO(2,2)"
+      [class.kz-cor-vitoria]="exibirVitoria(2, 2)"
+      (click)="jogar(2, 2)"
+      ></li>
     </ul>
   </div><!-- fim tabuleiro -->
 
