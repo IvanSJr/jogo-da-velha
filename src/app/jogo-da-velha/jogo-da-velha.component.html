@@ -74,12 +74,13 @@
   <!-- tela final -->
   <div *ngIf="showFinal">
     <span>
-    <p>Você venceu!!!</p>
-    <p>Você perdeu...</p>
-    <p>O jogo terminou empatado...</p>
+    <p *ngIf="jogador == 2">Você venceu!!!</p>
+    <p *ngIf="jogador == 1">Você perdeu...</p>
+    <p *ngIf="jogador == 0">O jogo terminou empatado...</p>
     <br />
     <a href="#"
-       class="botao">
+       class="botao"
+        (click)="novoJogo()">
          Jogar novamente
       </a>
     </span>
