@@ -1,4 +1,5 @@
-# Jogodavelha
+# Jogo da velha
+[![SC2 Video](https://user-images.githubusercontent.com/52472339/160217634-6754f385-33ff-4e02-bba9-d4532b9f7a28.png)](https://user-images.githubusercontent.com/52472339/160217485-dedbb7d1-f09c-4b2b-b6f2-858876294e34.mp4)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
